@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Замітки</title>
+  </head>
+  <body>
+    <h1>Замітки</h1>
+    <h2>Активні замітки</h2>
+    <table id="active-notes-table" class="content-table">
+      <!-- Заголовки таблиці залишаються тими ж -->
+      <thead>
+        <tr>
+          <th>Дата створення</th>
+          <th>Зміст замітки</th>
+          <th>Категорія замітки</th>
+          <th>Дати</th>
+          <th>Дії</th>
+        </tr>
+      </thead>
+      <tbody id="active-notes-body">
+        <!-- Активні замітки будуть відображатися тут -->
+      </tbody>
+    </table>
+
+    <button id="add-button" class="add-button-notes">Додати замітку</button>
+
+    <h2>Архівовані замітки</h2>
+    <table id="archived-notes-table" class="content-table">
+      <!-- Заголовки таблиці залишаються тими ж -->
+      <thead>
+        <tr>
+          <th>Дата створення</th>
+          <th>Зміст замітки</th>
+          <th>Категорія замітки</th>
+          <th>Згадані дати</th>
+          <th>Дії</th>
+        </tr>
+      </thead>
+      <tbody id="archived-notes-body">
+        <!-- Архівовані замітки будуть відображатися тут -->
+      </tbody>
+    </table>
+
+    <h2>Звіт</h2>
+    <table id="summary-table" class="content-table">
+      <!-- Заголовки таблиці залишаються тими ж -->
+      <thead>
+        <tr>
+          <th>Категорія замітки</th>
+          <th>Кількість активних заміток</th>
+          <th>Кількість архівованих заміток</th>
+        </tr>
+      </thead>
+      <tbody id="summary-body">
+        <!-- Звіт буде відображатися тут -->
+      </tbody>
+    </table>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
